@@ -1,0 +1,14 @@
+# Ignore pycache files
+**__pycache__/
+*.pyc
+*.env
+
+# Ignore virtual environment
+.venv/
+
+# Ignore the files for testing or exercises
+test.py
+**/exercises
+
+# Ignore files containing keys or passwords
+**/secret.py
