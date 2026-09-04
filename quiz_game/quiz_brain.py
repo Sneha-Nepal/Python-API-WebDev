@@ -21,12 +21,13 @@ class QuizBrain:
         """Provides the next question to move forward with the game"""
         current_question = self.question_list[self.question_number]
         self.question_number += 1
-        start_time = time.time()
+        # start_time = time.time()
         q_text = html.unescape(current_question.text)
-        user_answer = input(f"Q.{self.question_number}. {q_text} (True/False)? : ")
-        end_time = time.time()
-        elapsed = round(end_time - start_time, 1)
-        self.check_answer(user_answer, current_question.answer, elapsed)
+        # user_answer = input(f"Q.{self.question_number}. {q_text} (True/False)? : ")
+        # end_time = time.time()
+        # elapsed = round(end_time - start_time, 1)
+        # self.check_answer(user_answer, current_question.answer, elapsed)
+        return f"Q.{self.question_number}. {q_text}"
 
     def check_answer(self, user_answer, current_answer, e_time):
         """Checks the answer and tracks the score along with the time"""
