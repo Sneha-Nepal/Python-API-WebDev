@@ -2,18 +2,20 @@
 
 Quiz Game is a simple game made by using Object-Oriented Programming (OOP). This project was built to master modular design and object-oriented syntax.
 
+## Update
+
+* Added a **Tkinter GUI** with a question display, score label, and True/False buttons.
+* Added instant visual feedback by changing the question background color based on the answer.
+* Added automatic progression to the next question after answering.
+* Integrated the **Open Trivia Database API** to fetch questions dynamically.
+* Added API request parameters for quiz amount, category, difficulty, and question type.
+* Added HTML entity decoding to display API questions correctly.
+
 ## Features
 
 * **Questioning:** Prompts the user with questions sequentially and accepts user input for answers.
 * **Instant Feedback:** Validates answers immediately, updates the total score, and displays real-time progress after each question.
 * **Dynamic Game Loop:** Automatically checks if questions remain in the bank and stops execution when all questions are answered.
-
-## Uniquness
-
-To distinct it with normal tutorials, I have added a `time` feature by using `import time`.
-
-* **Time Tracking:** The game records the time when the question is displayed and when it is answered. Hence, the time difference is calculated.
-* **Bonus Score:** The game awards bonus score for question answered below 10 seconds. Correct answers taking longer than 10 seconds yield the standard 1 point.
 
 ## OOP Integration (Object-Oriented Programming)
 
